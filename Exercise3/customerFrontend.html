@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Store</title>
+</head>
+<body>
+    <form action="customerBackend.php" method="post" onsubmit="checker()">
+        <h2>Customer Information</h2>
+        <div>
+            Username:<input type="text" name="name"><br>
+            Password:&#9<input type="password" name="password"><br>
+        </div>
+
+        <h2>Store Sells</h2>
+        <table>
+            <tr>
+                <th>Item(price)</th>
+                <th>Quantities</th>
+            </tr>
+            <tr>
+                <td>PaperTower: $11.99(6 rolls)</td>
+                <td>
+                    <input type="number" name="papertower" id="ppt">
+                </td>
+            </tr>
+            <tr>
+                <td>Trash Bags: $5.99/(32 bags)</td>
+                <td>
+                    <input type="number" name="trashbag" id="thb">
+                </td>
+            </tr>
+            <tr>
+                <td>Dish Soap: $2.29/(bottle)</td>
+                <td>
+                    <input type="number" name="dishsoap" id="dsp">
+                </td>
+            </tr>
+        </table>
+
+        <h2>Shipping Option</h2>
+        <table>
+            <tr>
+                <td>
+                    <input type="radio" name="shipping" value="free">
+                    <label for="free">Free 7 day</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="shipping" value="night">
+                    <label for="night">$50.00 over night</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="shipping" value="three">
+                    <label for="three">$5.00 three day</label>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+<script src="formChecker.js"></script>
+</html>
