@@ -6,11 +6,11 @@
     <title>Web Store</title>
 </head>
 <body>
-    <form action="customerBackend.php" method="post" onsubmit="checker()">
+    <form action="customerBackend.php" method="post" id = "checker">
         <h2>Customer Information</h2>
         <div>
-            Username:<input type="text" name="name"><br>
-            Password:&#9<input type="password" name="password"><br>
+            Username:<input type="email" name="name" id="name"><br>
+            Password:&#9<input type="password" name="password" id="password"><br>
         </div>
 
         <h2>Store Sells</h2>
@@ -43,20 +43,20 @@
         <table>
             <tr>
                 <td>
-                    <input type="radio" name="shipping" value="free">
+                    <input type="radio" name="shipping" value="free" id = "s1" required>
                     <label for="free">Free 7 day</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="shipping" value="night">
-                    <label for="night">$50.00 over night</label>
+                    <input type="radio" name="shipping" value="Overnight" id = "s2" required>
+                    <label for="Overnight">$50.00 over night</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="shipping" value="three">
-                    <label for="three">$5.00 three day</label>
+                    <input type="radio" name="shipping" value="three day" id = "s3" required>
+                    <label for="three day">$5.00 three day</label>
                 </td>
             </tr>
         </table>
